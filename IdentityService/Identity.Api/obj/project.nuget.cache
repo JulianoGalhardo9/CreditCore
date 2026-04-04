@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "gU7qp1vP+NI=",
+  "dgSpecHash": "Eh1gxBjID2s=",
   "success": true,
   "projectFilePath": "/Users/julianogalhardo/Documents/CreditCore/IdentityService/Identity.Api/Identity.Api.csproj",
   "expectedPackageFiles": [
     "/Users/julianogalhardo/.nuget/packages/azure.core/1.25.0/azure.core.1.25.0.nupkg.sha512",
     "/Users/julianogalhardo/.nuget/packages/azure.identity/1.7.0/azure.identity.1.7.0.nupkg.sha512",
+    "/Users/julianogalhardo/.nuget/packages/bcrypt.net-next/4.0.3/bcrypt.net-next.4.0.3.nupkg.sha512",
     "/Users/julianogalhardo/.nuget/packages/mediatr/14.1.0/mediatr.14.1.0.nupkg.sha512",
     "/Users/julianogalhardo/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
     "/Users/julianogalhardo/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/8.0.0/microsoft.aspnetcore.authentication.jwtbearer.8.0.0.nupkg.sha512",
