@@ -1,0 +1,294 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/julianogalhardo/Documents/CreditCore/IdentityService/Identity.Api/Identity.Api.csproj": {}
+  },
+  "projects": {
+    "/Users/julianogalhardo/Documents/CreditCore/IdentityService/Identity.Api/Identity.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/julianogalhardo/Documents/CreditCore/IdentityService/Identity.Api/Identity.Api.csproj",
+        "projectName": "Identity.Api",
+        "projectPath": "/Users/julianogalhardo/Documents/CreditCore/IdentityService/Identity.Api/Identity.Api.csproj",
+        "packagesPath": "/Users/julianogalhardo/.nuget/packages/",
+        "outputPath": "/Users/julianogalhardo/Documents/CreditCore/IdentityService/Identity.Api/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/julianogalhardo/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/julianogalhardo/Documents/CreditCore/IdentityService/Identity.Application/Identity.Application.csproj": {
+                "projectPath": "/Users/julianogalhardo/Documents/CreditCore/IdentityService/Identity.Application/Identity.Application.csproj"
+              },
+              "/Users/julianogalhardo/Documents/CreditCore/IdentityService/Identity.Infrastructure/Identity.Infrastructure.csproj": {
+                "projectPath": "/Users/julianogalhardo/Documents/CreditCore/IdentityService/Identity.Infrastructure/Identity.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[9.0.14, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/julianogalhardo/.dotnet/sdk/9.0.312/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/julianogalhardo/Documents/CreditCore/IdentityService/Identity.Application/Identity.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/julianogalhardo/Documents/CreditCore/IdentityService/Identity.Application/Identity.Application.csproj",
+        "projectName": "Identity.Application",
+        "projectPath": "/Users/julianogalhardo/Documents/CreditCore/IdentityService/Identity.Application/Identity.Application.csproj",
+        "packagesPath": "/Users/julianogalhardo/.nuget/packages/",
+        "outputPath": "/Users/julianogalhardo/Documents/CreditCore/IdentityService/Identity.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/julianogalhardo/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/julianogalhardo/Documents/CreditCore/IdentityService/Identity.Domain/Identity.Domain.csproj": {
+                "projectPath": "/Users/julianogalhardo/Documents/CreditCore/IdentityService/Identity.Domain/Identity.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[14.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/julianogalhardo/.dotnet/sdk/9.0.312/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/julianogalhardo/Documents/CreditCore/IdentityService/Identity.Domain/Identity.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/julianogalhardo/Documents/CreditCore/IdentityService/Identity.Domain/Identity.Domain.csproj",
+        "projectName": "Identity.Domain",
+        "projectPath": "/Users/julianogalhardo/Documents/CreditCore/IdentityService/Identity.Domain/Identity.Domain.csproj",
+        "packagesPath": "/Users/julianogalhardo/.nuget/packages/",
+        "outputPath": "/Users/julianogalhardo/Documents/CreditCore/IdentityService/Identity.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/julianogalhardo/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/julianogalhardo/.dotnet/sdk/9.0.312/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/julianogalhardo/Documents/CreditCore/IdentityService/Identity.Infrastructure/Identity.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/julianogalhardo/Documents/CreditCore/IdentityService/Identity.Infrastructure/Identity.Infrastructure.csproj",
+        "projectName": "Identity.Infrastructure",
+        "projectPath": "/Users/julianogalhardo/Documents/CreditCore/IdentityService/Identity.Infrastructure/Identity.Infrastructure.csproj",
+        "packagesPath": "/Users/julianogalhardo/.nuget/packages/",
+        "outputPath": "/Users/julianogalhardo/Documents/CreditCore/IdentityService/Identity.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/julianogalhardo/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/julianogalhardo/Documents/CreditCore/IdentityService/Identity.Application/Identity.Application.csproj": {
+                "projectPath": "/Users/julianogalhardo/Documents/CreditCore/IdentityService/Identity.Application/Identity.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/julianogalhardo/.dotnet/sdk/9.0.312/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
