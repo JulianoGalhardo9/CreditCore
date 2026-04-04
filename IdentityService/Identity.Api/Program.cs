@@ -10,6 +10,9 @@ var builder = WebApplication.CreateBuilder(args);
 // 1. Dizemos para a API que vamos usar Controllers (nossos Recepcionistas).
 builder.Services.AddControllers();
 
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
 // 2. Configuramos o Banco de Dados (DbContext).
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
@@ -23,6 +26,9 @@ builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddSingleton<IPasswordHasher, PasswordHasher>();
 
 var app = builder.Build();
+
+app.UseSwagger();
+app.UseSwaggerUI();
 
 app.MapControllers();
 
