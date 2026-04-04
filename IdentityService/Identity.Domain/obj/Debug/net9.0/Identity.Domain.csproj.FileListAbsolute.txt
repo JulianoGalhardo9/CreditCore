@@ -1,0 +1,12 @@
+/Users/julianogalhardo/Documents/CreditCore/IdentityService/Identity.Domain/bin/Debug/net9.0/Identity.Domain.deps.json
+/Users/julianogalhardo/Documents/CreditCore/IdentityService/Identity.Domain/bin/Debug/net9.0/Identity.Domain.dll
+/Users/julianogalhardo/Documents/CreditCore/IdentityService/Identity.Domain/bin/Debug/net9.0/Identity.Domain.pdb
+/Users/julianogalhardo/Documents/CreditCore/IdentityService/Identity.Domain/obj/Debug/net9.0/Identity.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/julianogalhardo/Documents/CreditCore/IdentityService/Identity.Domain/obj/Debug/net9.0/Identity.Domain.AssemblyInfoInputs.cache
+/Users/julianogalhardo/Documents/CreditCore/IdentityService/Identity.Domain/obj/Debug/net9.0/Identity.Domain.AssemblyInfo.cs
+/Users/julianogalhardo/Documents/CreditCore/IdentityService/Identity.Domain/obj/Debug/net9.0/Identity.Domain.csproj.CoreCompileInputs.cache
+/Users/julianogalhardo/Documents/CreditCore/IdentityService/Identity.Domain/obj/Debug/net9.0/Identity.Domain.sourcelink.json
+/Users/julianogalhardo/Documents/CreditCore/IdentityService/Identity.Domain/obj/Debug/net9.0/Identity.Domain.dll
+/Users/julianogalhardo/Documents/CreditCore/IdentityService/Identity.Domain/obj/Debug/net9.0/refint/Identity.Domain.dll
+/Users/julianogalhardo/Documents/CreditCore/IdentityService/Identity.Domain/obj/Debug/net9.0/Identity.Domain.pdb
+/Users/julianogalhardo/Documents/CreditCore/IdentityService/Identity.Domain/obj/Debug/net9.0/ref/Identity.Domain.dll
