@@ -33,4 +33,20 @@ public class LoanController : ControllerBase
 
         return Created("", new { loanId = loanId });
     }
+
+    //Avaliar o Empréstimo
+    [HttpPost("evaluate")]
+    public async Task<IActionResult> EvaluateLoan([FromBody] EvaluateLoanCommand command)
+    {
+        try
+        {
+            await _mediator.Send(command);
+
+            return Ok(new { message = "Avaliação concluída com sucesso. O status do empréstimo foi atualizado!" });
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(new { error = ex.Message });
+        }
+    }
 }
