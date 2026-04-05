@@ -30,4 +30,11 @@ public class LoanRepository : ILoanRepository
         _context.Loans.Update(loan);
         await _context.SaveChangesAsync();
     }
+
+    public async Task<IEnumerable<Loan>> GetByUserIdAsync(Guid userId)
+    {
+        return await _context.Loans
+            .Where(l => l.UserId == userId)
+            .ToListAsync();
+    }
 }
