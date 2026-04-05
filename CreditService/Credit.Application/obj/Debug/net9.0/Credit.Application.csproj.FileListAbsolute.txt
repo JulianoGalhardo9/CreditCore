@@ -1,0 +1,16 @@
+/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Application/obj/Debug/net9.0/Credit.Application.csproj.AssemblyReference.cache
+/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Application/obj/Debug/net9.0/Credit.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Application/obj/Debug/net9.0/Credit.Application.AssemblyInfoInputs.cache
+/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Application/obj/Debug/net9.0/Credit.Application.AssemblyInfo.cs
+/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Application/obj/Debug/net9.0/Credit.Application.csproj.CoreCompileInputs.cache
+/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Application/obj/Debug/net9.0/Credit.Application.sourcelink.json
+/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Application/bin/Debug/net9.0/Credit.Application.deps.json
+/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Application/bin/Debug/net9.0/Credit.Application.dll
+/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Application/bin/Debug/net9.0/Credit.Application.pdb
+/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Application/bin/Debug/net9.0/Credit.Domain.dll
+/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Application/bin/Debug/net9.0/Credit.Domain.pdb
+/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Application/obj/Debug/net9.0/Credit.A.324FFFEC.Up2Date
+/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Application/obj/Debug/net9.0/Credit.Application.dll
+/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Application/obj/Debug/net9.0/refint/Credit.Application.dll
+/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Application/obj/Debug/net9.0/Credit.Application.pdb
+/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Application/obj/Debug/net9.0/ref/Credit.Application.dll

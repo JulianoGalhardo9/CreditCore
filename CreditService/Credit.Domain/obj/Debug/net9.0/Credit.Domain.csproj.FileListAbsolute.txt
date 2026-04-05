@@ -1,0 +1,12 @@
+/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Domain/bin/Debug/net9.0/Credit.Domain.deps.json
+/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Domain/bin/Debug/net9.0/Credit.Domain.dll
+/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Domain/bin/Debug/net9.0/Credit.Domain.pdb
+/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Domain/obj/Debug/net9.0/Credit.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Domain/obj/Debug/net9.0/Credit.Domain.AssemblyInfoInputs.cache
+/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Domain/obj/Debug/net9.0/Credit.Domain.AssemblyInfo.cs
+/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Domain/obj/Debug/net9.0/Credit.Domain.csproj.CoreCompileInputs.cache
+/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Domain/obj/Debug/net9.0/Credit.Domain.sourcelink.json
+/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Domain/obj/Debug/net9.0/Credit.Domain.dll
+/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Domain/obj/Debug/net9.0/refint/Credit.Domain.dll
+/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Domain/obj/Debug/net9.0/Credit.Domain.pdb
+/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Domain/obj/Debug/net9.0/ref/Credit.Domain.dll

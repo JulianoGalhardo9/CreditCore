@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/julianogalhardo/.Trash/CreditService/Credit.Domain/Credit.Domain.csproj": {}
+    "/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Domain/Credit.Domain.csproj": {}
   },
   "projects": {
-    "/Users/julianogalhardo/.Trash/CreditService/Credit.Domain/Credit.Domain.csproj": {
+    "/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Domain/Credit.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/julianogalhardo/.Trash/CreditService/Credit.Domain/Credit.Domain.csproj",
+        "projectUniqueName": "/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Domain/Credit.Domain.csproj",
         "projectName": "Credit.Domain",
-        "projectPath": "/Users/julianogalhardo/.Trash/CreditService/Credit.Domain/Credit.Domain.csproj",
+        "projectPath": "/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Domain/Credit.Domain.csproj",
         "packagesPath": "/Users/julianogalhardo/.nuget/packages/",
-        "outputPath": "/Users/julianogalhardo/.Trash/CreditService/Credit.Domain/obj/",
+        "outputPath": "/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/julianogalhardo/.nuget/NuGet/NuGet.Config"

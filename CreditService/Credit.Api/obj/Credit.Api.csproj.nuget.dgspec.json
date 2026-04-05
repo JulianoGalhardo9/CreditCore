@@ -1,17 +1,175 @@
 {
   "format": 1,
   "restore": {
-    "/Users/julianogalhardo/.Trash/CreditService/Credit.Api/Credit.Api.csproj": {}
+    "/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Api/Credit.Api.csproj": {}
   },
   "projects": {
-    "/Users/julianogalhardo/.Trash/CreditService/Credit.Api/Credit.Api.csproj": {
+    "/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Api/Credit.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/julianogalhardo/.Trash/CreditService/Credit.Api/Credit.Api.csproj",
+        "projectUniqueName": "/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Api/Credit.Api.csproj",
         "projectName": "Credit.Api",
-        "projectPath": "/Users/julianogalhardo/.Trash/CreditService/Credit.Api/Credit.Api.csproj",
+        "projectPath": "/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Api/Credit.Api.csproj",
         "packagesPath": "/Users/julianogalhardo/.nuget/packages/",
-        "outputPath": "/Users/julianogalhardo/.Trash/CreditService/Credit.Api/obj/",
+        "outputPath": "/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Api/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/julianogalhardo/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Application/Credit.Application.csproj": {
+                "projectPath": "/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Application/Credit.Application.csproj"
+              },
+              "/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Infrastructure/Credit.Infrastructure.csproj": {
+                "projectPath": "/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Infrastructure/Credit.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[9.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/julianogalhardo/.dotnet/sdk/9.0.312/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Application/Credit.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Application/Credit.Application.csproj",
+        "projectName": "Credit.Application",
+        "projectPath": "/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Application/Credit.Application.csproj",
+        "packagesPath": "/Users/julianogalhardo/.nuget/packages/",
+        "outputPath": "/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/julianogalhardo/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Domain/Credit.Domain.csproj": {
+                "projectPath": "/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Domain/Credit.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[14.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/julianogalhardo/.dotnet/sdk/9.0.312/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Domain/Credit.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Domain/Credit.Domain.csproj",
+        "projectName": "Credit.Domain",
+        "projectPath": "/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Domain/Credit.Domain.csproj",
+        "packagesPath": "/Users/julianogalhardo/.nuget/packages/",
+        "outputPath": "/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/julianogalhardo/.nuget/NuGet/NuGet.Config"
@@ -43,10 +201,73 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/julianogalhardo/.dotnet/sdk/9.0.312/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Infrastructure/Credit.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Infrastructure/Credit.Infrastructure.csproj",
+        "projectName": "Credit.Infrastructure",
+        "projectPath": "/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Infrastructure/Credit.Infrastructure.csproj",
+        "packagesPath": "/Users/julianogalhardo/.nuget/packages/",
+        "outputPath": "/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/julianogalhardo/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Application/Credit.Application.csproj": {
+                "projectPath": "/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Application/Credit.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
           "dependencies": {
-            "Microsoft.AspNetCore.OpenApi": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[9.0.14, )"
+              "version": "[8.0.0, )"
             }
           },
           "imports": [
@@ -61,9 +282,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
