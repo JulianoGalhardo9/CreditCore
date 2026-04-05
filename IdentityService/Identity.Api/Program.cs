@@ -25,6 +25,8 @@ builder.Services.AddScoped<IUserRepository, UserRepository>();
 
 builder.Services.AddSingleton<IPasswordHasher, PasswordHasher>();
 
+builder.Services.AddScoped<ITokenService, TokenService>();
+
 var app = builder.Build();
 
 app.UseSwagger();

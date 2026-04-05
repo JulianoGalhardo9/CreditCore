@@ -9,6 +9,7 @@ namespace Identity.Api.Controllers;
 public class UserController : ControllerBase
 {
     private readonly IMediator _mediator;
+
     public UserController(IMediator mediator)
     {
         _mediator = mediator;
@@ -20,12 +21,26 @@ public class UserController : ControllerBase
         try
         {
             var userId = await _mediator.Send(command);
-
             return Created("", new { id = userId });
         }
         catch (Exception ex)
         {
             return BadRequest(new { error = ex.Message });
+        }
+    }
+
+    [HttpPost("login")]
+    public async Task<IActionResult> Login([FromBody] LoginUserCommand command)
+    {
+        try
+        {
+            var token = await _mediator.Send(command);
+
+            return Ok(new { token = token });
+        }
+        catch (Exception ex)
+        {
+            return Unauthorized(new { error = ex.Message });
         }
     }
 }
