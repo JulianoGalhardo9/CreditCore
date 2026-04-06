@@ -1,10 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "oGN7FYtYxuE=",
+  "dgSpecHash": "nqCVV2mR5u8=",
   "success": true,
   "projectFilePath": "/Users/julianogalhardo/Documents/CreditCore/ApiGateway/Gateway.Api/Gateway.Api.csproj",
   "expectedPackageFiles": [
+    "/Users/julianogalhardo/.nuget/packages/microsoft.extensions.apidescription.server/9.0.0/microsoft.extensions.apidescription.server.9.0.0.nupkg.sha512",
+    "/Users/julianogalhardo/.nuget/packages/microsoft.openapi/2.4.1/microsoft.openapi.2.4.1.nupkg.sha512",
+    "/Users/julianogalhardo/.nuget/packages/swashbuckle.aspnetcore/10.1.7/swashbuckle.aspnetcore.10.1.7.nupkg.sha512",
+    "/Users/julianogalhardo/.nuget/packages/swashbuckle.aspnetcore.swagger/10.1.7/swashbuckle.aspnetcore.swagger.10.1.7.nupkg.sha512",
+    "/Users/julianogalhardo/.nuget/packages/swashbuckle.aspnetcore.swaggergen/10.1.7/swashbuckle.aspnetcore.swaggergen.10.1.7.nupkg.sha512",
+    "/Users/julianogalhardo/.nuget/packages/swashbuckle.aspnetcore.swaggerui/10.1.7/swashbuckle.aspnetcore.swaggerui.10.1.7.nupkg.sha512",
     "/Users/julianogalhardo/.nuget/packages/system.io.hashing/8.0.0/system.io.hashing.8.0.0.nupkg.sha512",
+    "/Users/julianogalhardo/.nuget/packages/system.text.json/8.0.5/system.text.json.8.0.5.nupkg.sha512",
     "/Users/julianogalhardo/.nuget/packages/yarp.reverseproxy/2.3.0/yarp.reverseproxy.2.3.0.nupkg.sha512"
   ],
   "logs": []
