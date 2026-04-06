@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "oGN7FYtYxuE=",
+  "success": true,
+  "projectFilePath": "/Users/julianogalhardo/Documents/CreditCore/ApiGateway/Gateway.Api/Gateway.Api.csproj",
+  "expectedPackageFiles": [
+    "/Users/julianogalhardo/.nuget/packages/system.io.hashing/8.0.0/system.io.hashing.8.0.0.nupkg.sha512",
+    "/Users/julianogalhardo/.nuget/packages/yarp.reverseproxy/2.3.0/yarp.reverseproxy.2.3.0.nupkg.sha512"
+  ],
+  "logs": []
+}
