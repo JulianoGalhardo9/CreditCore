@@ -1,0 +1,12 @@
+/Users/julianogalhardo/Documents/CreditCore/AuditService/Audit.Domain/bin/Debug/net9.0/Audit.Domain.deps.json
+/Users/julianogalhardo/Documents/CreditCore/AuditService/Audit.Domain/bin/Debug/net9.0/Audit.Domain.dll
+/Users/julianogalhardo/Documents/CreditCore/AuditService/Audit.Domain/bin/Debug/net9.0/Audit.Domain.pdb
+/Users/julianogalhardo/Documents/CreditCore/AuditService/Audit.Domain/obj/Debug/net9.0/Audit.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/julianogalhardo/Documents/CreditCore/AuditService/Audit.Domain/obj/Debug/net9.0/Audit.Domain.AssemblyInfoInputs.cache
+/Users/julianogalhardo/Documents/CreditCore/AuditService/Audit.Domain/obj/Debug/net9.0/Audit.Domain.AssemblyInfo.cs
+/Users/julianogalhardo/Documents/CreditCore/AuditService/Audit.Domain/obj/Debug/net9.0/Audit.Domain.csproj.CoreCompileInputs.cache
+/Users/julianogalhardo/Documents/CreditCore/AuditService/Audit.Domain/obj/Debug/net9.0/Audit.Domain.sourcelink.json
+/Users/julianogalhardo/Documents/CreditCore/AuditService/Audit.Domain/obj/Debug/net9.0/Audit.Domain.dll
+/Users/julianogalhardo/Documents/CreditCore/AuditService/Audit.Domain/obj/Debug/net9.0/refint/Audit.Domain.dll
+/Users/julianogalhardo/Documents/CreditCore/AuditService/Audit.Domain/obj/Debug/net9.0/Audit.Domain.pdb
+/Users/julianogalhardo/Documents/CreditCore/AuditService/Audit.Domain/obj/Debug/net9.0/ref/Audit.Domain.dll

@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using Audit.Domain.Entities;
+
 namespace Audit.Infrastructure.Data;
 
 public class AppDbContext : DbContext
@@ -5,6 +8,7 @@ public class AppDbContext : DbContext
     public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
     {
     }
+
     public DbSet<AuditLog> AuditLogs { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -19,7 +23,7 @@ public class AppDbContext : DbContext
             builder.Property(a => a.EventName)
                    .IsRequired()
                    .HasMaxLength(100);
-                   
+
             builder.Property(a => a.Payload)
                    .IsRequired();
         });
