@@ -1,3 +1,7 @@
+# CreditCore
+
+<div align="center">
+
 ### Distributed Credit Analysis Platform · Microservices · Event-Driven Architecture
 
 <br/>
@@ -23,7 +27,8 @@
 
 ## 🏗️ Arquitetura
 
-┌──────────────────────────────────────────┐
+```text
+                    ┌──────────────────────────────────────────┐
                     │           API GATEWAY (YARP)             │
                     │     Port :5050 · Swagger Aggregation      │
                     └──────────┬────────────┬──────────────────┘
@@ -48,6 +53,7 @@
                  [ SQL Server ]  [ SQL Server ]  [ SQL Server ]  [ SQL Server ]
                  Identity DB     Credit DB        RuleEngine DB   Audit DB
                  (Isolated)      (Isolated)       (Isolated)      (Isolated)
+```
 
 ### Decisões arquiteturais
 
@@ -84,6 +90,7 @@ Ponto de entrada unificado com roteamento inteligente, transformação de paths 
 
 ## 🛠️ Stack Tecnológica
 
+```text
 Backend
 ├── Runtime         → .NET 9 / C# 12
 ├── API             → ASP.NET Core Minimal APIs + Controllers
@@ -92,34 +99,40 @@ Backend
 ├── CQRS            → MediatR (Commands, Queries, Notifications)
 ├── Auth            → JWT Bearer + BCrypt.Net
 └── Gateway         → YARP (Yet Another Reverse Proxy)
+
 Persistência
 ├── Banco           → SQL Server (instâncias isoladas por serviço)
 └── Padrão          → Repository Pattern + Unit of Work
+
 Qualidade
 ├── Testes          → xUnit + FluentAssertions
 ├── Test DB         → In-Memory Database (integração)
 └── Cobertura       → Domain Tests + Infrastructure Tests
+
 Infraestrutura
 ├── Containers      → Docker + Docker Compose
 ├── Networking      → Internal Docker network entre serviços
 └── Config          → Options Pattern + Environment Variables
+```
 
 ---
 
 ## 🔁 Fluxo de Crédito (Event-Driven)
 
+```text
 Cliente                 CreditService            RabbitMQ              RuleEngineService
-│                          │                      │                         │
-│──POST /loans/apply──────▶│                      │                         │
-│                          │──Publish(LoanCreated)▶│                         │
-│◀── 202 Accepted ─────────│                      │──LoanCreated ──────────▶│
-│                          │                      │                         │── Avalia Risco
-│                          │                      │◀── LoanEvaluated ────────│
-│                          │◀── LoanEvaluated ────│                         │
-│                          │── Atualiza Status     │                         │
-│                          │──Publish(LoanApproved/Rejected)▶│              │
-│                          │                      │──────────────────────▶ AuditService
-│                          │                      │                       (Persiste log)
+  │                          │                      │                         │
+  │──POST /loans/apply──────▶│                      │                         │
+  │                          │──Publish(LoanCreated)▶│                        │
+  │◀── 202 Accepted ─────────│                      │──LoanCreated ──────────▶│
+  │                          │                      │                         │── Avalia Risco
+  │                          │                      │◀── LoanEvaluated ────────│
+  │                          │◀── LoanEvaluated ────│                         │
+  │                          │── Atualiza Status     │                         │
+  │                          │──Publish(LoanApproved/Rejected)▶│              │
+  │                          │                      │──────────────────────▶ AuditService
+  │                          │                      │                       (Persiste log)
+```
 
 ---
 
@@ -136,6 +149,7 @@ A cobertura de testes protege as duas camadas mais críticas da aplicação:
 - Repositórios com banco In-Memory (EF Core)
 - Mapeamentos ORM e comportamento de queries
 - Consistência de migrations
+
 ```bash
 # Executar todos os testes
 dotnet test
@@ -153,9 +167,10 @@ dotnet test --logger "console;verbosity=detailed"
 - [Git](https://git-scm.com/)
 
 ### Setup em 3 comandos
+
 ```bash
 # 1. Clone o repositório
-git clone https://github.com/seu-usuario/CreditCore.git && cd CreditCore
+git clone https://github.com/JulianoGalhardo9/CreditCore.git && cd CreditCore
 
 # 2. Suba todo o ecossistema (build + migrations automáticas incluídas)
 docker compose up -d --build
@@ -194,6 +209,7 @@ open http://localhost:5050
 
 ## 📁 Estrutura do Repositório
 
+```text
 CreditCore/
 ├── src/
 │   ├── ApiGateway/              # YARP reverse proxy + Swagger aggregation
@@ -212,6 +228,7 @@ CreditCore/
 │   └── CreditService.Infrastructure.Tests/
 ├── docker-compose.yml
 └── README.md
+```
 
 ---
 
