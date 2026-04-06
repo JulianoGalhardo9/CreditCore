@@ -24,7 +24,11 @@ builder.Services.AddMassTransit(x =>
             h.Username("guest");
             h.Password("guest");
         });
-        cfg.ConfigureEndpoints(context);
+
+        cfg.ReceiveEndpoint("rule-engine-credit-requested-queue", e =>
+        {
+            e.ConfigureConsumer<CreditRequestedEventConsumer>(context);
+        });
     });
 });
 
