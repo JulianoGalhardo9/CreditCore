@@ -1,0 +1,12 @@
+/Users/julianogalhardo/Documents/CreditCore/RuleEngineService/RuleEngine.Domain/bin/Debug/net9.0/RuleEngine.Domain.deps.json
+/Users/julianogalhardo/Documents/CreditCore/RuleEngineService/RuleEngine.Domain/bin/Debug/net9.0/RuleEngine.Domain.dll
+/Users/julianogalhardo/Documents/CreditCore/RuleEngineService/RuleEngine.Domain/bin/Debug/net9.0/RuleEngine.Domain.pdb
+/Users/julianogalhardo/Documents/CreditCore/RuleEngineService/RuleEngine.Domain/obj/Debug/net9.0/RuleEngine.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/julianogalhardo/Documents/CreditCore/RuleEngineService/RuleEngine.Domain/obj/Debug/net9.0/RuleEngine.Domain.AssemblyInfoInputs.cache
+/Users/julianogalhardo/Documents/CreditCore/RuleEngineService/RuleEngine.Domain/obj/Debug/net9.0/RuleEngine.Domain.AssemblyInfo.cs
+/Users/julianogalhardo/Documents/CreditCore/RuleEngineService/RuleEngine.Domain/obj/Debug/net9.0/RuleEngine.Domain.csproj.CoreCompileInputs.cache
+/Users/julianogalhardo/Documents/CreditCore/RuleEngineService/RuleEngine.Domain/obj/Debug/net9.0/RuleEngine.Domain.sourcelink.json
+/Users/julianogalhardo/Documents/CreditCore/RuleEngineService/RuleEngine.Domain/obj/Debug/net9.0/RuleEngine.Domain.dll
+/Users/julianogalhardo/Documents/CreditCore/RuleEngineService/RuleEngine.Domain/obj/Debug/net9.0/refint/RuleEngine.Domain.dll
+/Users/julianogalhardo/Documents/CreditCore/RuleEngineService/RuleEngine.Domain/obj/Debug/net9.0/RuleEngine.Domain.pdb
+/Users/julianogalhardo/Documents/CreditCore/RuleEngineService/RuleEngine.Domain/obj/Debug/net9.0/ref/RuleEngine.Domain.dll

@@ -7,12 +7,13 @@ public class CreditAnalysis
     public Score Score { get; private set; }
     public bool Approved { get; private set; }
     public string Observation { get; private set; }
-
+    protected CreditAnalysis() { }
     public CreditAnalysis(Guid loanId, int scoreValue)
     {
         Id = Guid.NewGuid();
         LoanId = loanId;
         Score = new Score(scoreValue);
+        
         Approved = Score.Value > 600;
         Observation = Approved ? "Aprovado automaticamente pelo motor" : "Reprovado por score insuficiente";
     }

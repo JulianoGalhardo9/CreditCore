@@ -4,6 +4,7 @@ public record Score
 {
     public int Value { get; init; }
     public string Description { get; init; }
+    protected Score() { }
 
     public Score(int value)
     {
