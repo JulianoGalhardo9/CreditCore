@@ -22,6 +22,8 @@ builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblyContaining<Re
 
 builder.Services.AddMassTransit(x =>
 {
+    x.AddConsumer<Credit.Application.Consumers.CreditEvaluatedEventConsumer>();
+
     x.UsingRabbitMq((context, cfg) =>
     {
         cfg.Host("localhost", "/", h =>
@@ -29,8 +31,11 @@ builder.Services.AddMassTransit(x =>
             h.Username("guest");
             h.Password("guest");
         });
-        
-        cfg.ConfigureEndpoints(context);
+
+        cfg.ReceiveEndpoint("credit-service-evaluated-queue", e =>
+        {
+            e.ConfigureConsumer<Credit.Application.Consumers.CreditEvaluatedEventConsumer>(context);
+        });
     });
 });
 
