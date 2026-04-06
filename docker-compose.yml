@@ -1,26 +1,76 @@
 version: '3.8'
 
 services:
+  # 1.Banco de Dados
   sqlserver:
-    image: mcr.microsoft.com/azure-sql-edge:latest
-    container_name: creditcore-sqlserver
+    image: mcr.microsoft.com/azure-sql-edge
+    container_name: sqlserver
     environment:
       - ACCEPT_EULA=Y
       - SA_PASSWORD=SuaSenhaForte123!
     ports:
       - "1433:1433"
     volumes:
-      - sqlserver_data:/var/opt/mssql
+      - sqlvolume:/var/opt/mssql
 
+  # 2.Mensageiro
   rabbitmq:
     image: rabbitmq:3-management
-    container_name: creditcore-rabbitmq
+    container_name: rabbitmq
     ports:
-      - "5672:5672"   
-      - "15672:15672" 
-    volumes:
-      - rabbitmq_data:/var/lib/rabbitmq
+      - "5672:5672"
+      - "15672:15672"
+
+  # 3.API de Identidade
+  identityservice:
+    build:
+      context: ./IdentityService
+      dockerfile: Dockerfile
+    container_name: identityservice
+    depends_on:
+      - sqlserver
+
+  # 4. API de Crédito
+  creditservice:
+    build:
+      context: ./CreditService
+      dockerfile: Dockerfile
+    container_name: creditservice
+    depends_on:
+      - sqlserver
+      - rabbitmq
+
+  # 5. API de Auditoria
+  auditservice:
+    build:
+      context: ./AuditService
+      dockerfile: Dockerfile
+    container_name: auditservice
+    depends_on:
+      - sqlserver
+      - rabbitmq
+
+  # 6.API do Motor de Regras
+  ruleengineservice:
+    build:
+      context: ./RuleEngineService
+      dockerfile: Dockerfile
+    container_name: ruleengineservice
+    depends_on:
+      - sqlserver
+      - rabbitmq
+
+  # 7.Porteiro
+  apigateway:
+    build:
+      context: ./ApiGateway
+      dockerfile: Dockerfile
+    container_name: apigateway
+    ports:
+      - "5050:8080"
+    depends_on:
+      - identityservice
+      - creditservice
 
 volumes:
-  sqlserver_data:
-  rabbitmq_data:
+  sqlvolume:

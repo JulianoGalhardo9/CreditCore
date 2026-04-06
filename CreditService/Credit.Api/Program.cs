@@ -15,7 +15,7 @@ builder.Services.AddControllers();
 
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
-    options.UseSqlServer("Server=localhost,1433;Database=CreditCore_Credit;User Id=sa;Password=SuaSenhaForte123!;TrustServerCertificate=True;");
+    options.UseSqlServer("Server=sqlserver;Database=CreditCore_Credit;User Id=sa;Password=SuaSenhaForte123!;TrustServerCertificate=True;Encrypt=False;");
 });
 
 builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblyContaining<RequestLoanCommand>());
@@ -26,7 +26,7 @@ builder.Services.AddMassTransit(x =>
 
     x.UsingRabbitMq((context, cfg) =>
     {
-        cfg.Host("localhost", "/", h =>
+        cfg.Host("rabbitmq", "/", h =>
         {
             h.Username("guest");
             h.Password("guest");
@@ -87,6 +87,12 @@ builder.Services.AddSwaggerGen(c =>
 });
 
 var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<Credit.Infrastructure.Data.AppDbContext>();
+    db.Database.Migrate();
+}
 
 app.UseSwagger();
 app.UseSwaggerUI();

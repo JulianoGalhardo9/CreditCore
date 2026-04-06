@@ -7,16 +7,14 @@ using Identity.Infrastructure.Security;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// 1. Dizemos para a API que vamos usar Controllers (nossos Recepcionistas).
 builder.Services.AddControllers();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// 2. Configuramos o Banco de Dados (DbContext).
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
-    options.UseSqlServer("Server=localhost,1433;Database=CreditCore_Identity;User Id=sa;Password=SuaSenhaForte123!;TrustServerCertificate=True;");
+    options.UseSqlServer("Server=sqlserver;Database=CreditCore_Identity;User Id=sa;Password=SuaSenhaForte123!;TrustServerCertificate=True;Encrypt=False;");
 });
 
 builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblyContaining<RegisterUserCommandHandler>());
@@ -28,6 +26,12 @@ builder.Services.AddSingleton<IPasswordHasher, PasswordHasher>();
 builder.Services.AddScoped<ITokenService, TokenService>();
 
 var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<Identity.Infrastructure.Data.AppDbContext>();
+    db.Database.Migrate();
+}
 
 app.UseSwagger();
 app.UseSwaggerUI();
