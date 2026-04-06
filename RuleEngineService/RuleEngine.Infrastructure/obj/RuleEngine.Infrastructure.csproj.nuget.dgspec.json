@@ -4,14 +4,77 @@
     "/Users/julianogalhardo/Documents/CreditCore/RuleEngineService/RuleEngine.Infrastructure/RuleEngine.Infrastructure.csproj": {}
   },
   "projects": {
-    "/Users/julianogalhardo/Documents/CreditCore/RuleEngineService/RuleEngine.Infrastructure/RuleEngine.Infrastructure.csproj": {
+    "/Users/julianogalhardo/Documents/CreditCore/RuleEngineService/RuleEngine.Application/RuleEngine.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/julianogalhardo/Documents/CreditCore/RuleEngineService/RuleEngine.Infrastructure/RuleEngine.Infrastructure.csproj",
-        "projectName": "RuleEngine.Infrastructure",
-        "projectPath": "/Users/julianogalhardo/Documents/CreditCore/RuleEngineService/RuleEngine.Infrastructure/RuleEngine.Infrastructure.csproj",
+        "projectUniqueName": "/Users/julianogalhardo/Documents/CreditCore/RuleEngineService/RuleEngine.Application/RuleEngine.Application.csproj",
+        "projectName": "RuleEngine.Application",
+        "projectPath": "/Users/julianogalhardo/Documents/CreditCore/RuleEngineService/RuleEngine.Application/RuleEngine.Application.csproj",
         "packagesPath": "/Users/julianogalhardo/.nuget/packages/",
-        "outputPath": "/Users/julianogalhardo/Documents/CreditCore/RuleEngineService/RuleEngine.Infrastructure/obj/",
+        "outputPath": "/Users/julianogalhardo/Documents/CreditCore/RuleEngineService/RuleEngine.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/julianogalhardo/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/julianogalhardo/Documents/CreditCore/RuleEngineService/RuleEngine.Domain/RuleEngine.Domain.csproj": {
+                "projectPath": "/Users/julianogalhardo/Documents/CreditCore/RuleEngineService/RuleEngine.Domain/RuleEngine.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/julianogalhardo/.dotnet/sdk/9.0.312/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/julianogalhardo/Documents/CreditCore/RuleEngineService/RuleEngine.Domain/RuleEngine.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/julianogalhardo/Documents/CreditCore/RuleEngineService/RuleEngine.Domain/RuleEngine.Domain.csproj",
+        "projectName": "RuleEngine.Domain",
+        "projectPath": "/Users/julianogalhardo/Documents/CreditCore/RuleEngineService/RuleEngine.Domain/RuleEngine.Domain.csproj",
+        "packagesPath": "/Users/julianogalhardo/.nuget/packages/",
+        "outputPath": "/Users/julianogalhardo/Documents/CreditCore/RuleEngineService/RuleEngine.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/julianogalhardo/.nuget/NuGet/NuGet.Config"
@@ -43,6 +106,75 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/julianogalhardo/.dotnet/sdk/9.0.312/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/julianogalhardo/Documents/CreditCore/RuleEngineService/RuleEngine.Infrastructure/RuleEngine.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/julianogalhardo/Documents/CreditCore/RuleEngineService/RuleEngine.Infrastructure/RuleEngine.Infrastructure.csproj",
+        "projectName": "RuleEngine.Infrastructure",
+        "projectPath": "/Users/julianogalhardo/Documents/CreditCore/RuleEngineService/RuleEngine.Infrastructure/RuleEngine.Infrastructure.csproj",
+        "packagesPath": "/Users/julianogalhardo/.nuget/packages/",
+        "outputPath": "/Users/julianogalhardo/Documents/CreditCore/RuleEngineService/RuleEngine.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/julianogalhardo/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/julianogalhardo/Documents/CreditCore/RuleEngineService/RuleEngine.Application/RuleEngine.Application.csproj": {
+                "projectPath": "/Users/julianogalhardo/Documents/CreditCore/RuleEngineService/RuleEngine.Application/RuleEngine.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
