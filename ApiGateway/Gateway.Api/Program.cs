@@ -11,9 +11,9 @@ var app = builder.Build();
 app.UseSwagger();
 app.UseSwaggerUI(options =>
 {
-
     options.SwaggerEndpoint("/api/User/swagger/v1/swagger.json", "Identity Service");
     options.SwaggerEndpoint("/api/Loan/swagger/v1/swagger.json", "Credit Service");
+    
     options.RoutePrefix = string.Empty;
 });
 
