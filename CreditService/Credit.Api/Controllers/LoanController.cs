@@ -1,5 +1,6 @@
 using System.Security.Claims;
 using Credit.Application.Commands;
+using Credit.Application.Queries;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -43,6 +44,33 @@ public class LoanController : ControllerBase
             await _mediator.Send(command);
 
             return Ok(new { message = "Avaliação concluída com sucesso. O status do empréstimo foi atualizado!" });
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(new { error = ex.Message });
+        }
+    }
+
+    // Consultar meus empréstimos
+    [HttpGet("my-loans")]
+    public async Task<IActionResult> GetMyLoans()
+    {
+        try
+        {
+            var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+            if (string.IsNullOrEmpty(userIdClaim))
+            {
+                return Unauthorized(new { error = "Crachá inválido ou sem identificação." });
+            }
+
+            var userId = Guid.Parse(userIdClaim);
+
+            var query = new GetMyLoansQuery(userId);
+
+            var loans = await _mediator.Send(query);
+
+            return Ok(loans);
         }
         catch (Exception ex)
         {

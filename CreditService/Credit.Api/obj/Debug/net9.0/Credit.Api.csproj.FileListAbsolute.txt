@@ -150,3 +150,7 @@
 /Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Api/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll
 /Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Api/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll
 /Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Api/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Api/bin/Debug/net9.0/MassTransit.dll
+/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Api/bin/Debug/net9.0/MassTransit.Abstractions.dll
+/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Api/bin/Debug/net9.0/MassTransit.RabbitMqTransport.dll
+/Users/julianogalhardo/Documents/CreditCore/CreditService/Credit.Api/bin/Debug/net9.0/RabbitMQ.Client.dll
